@@ -9,6 +9,7 @@ import AppSwitcher from '../routes';
 
 import apolloClient from './apollo';
 import ToastsList from '../components/ToastsList';
+import ConfirmModal from '../components/ConfirmModal';
 
 const ReactApp = ({ layout, metadata, toasts }) => {
   const contextData = { metadata };
@@ -22,6 +23,7 @@ const ReactApp = ({ layout, metadata, toasts }) => {
             <Layout data={layout}>
               <ToastsList railsMessages={toasts} />
               <AppSwitcher />
+              <ConfirmModal />
             </Layout>
           </ConnectedRouter>
         </ApolloProvider>
