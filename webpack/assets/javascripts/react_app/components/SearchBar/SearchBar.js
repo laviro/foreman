@@ -1,6 +1,7 @@
 import React from 'react';
 import { isEmpty } from 'lodash';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import AutoComplete from '../AutoComplete';
 import Bookmarks from '../Bookmarks';
 import { changeQuery } from '../../common/urlHelpers';
@@ -16,7 +17,12 @@ const SearchBar = props => {
   } = props;
 
   return (
-    <div className="search-bar input-group" id="search-bar">
+    <div
+      className={classNames('search-bar', 'input-group', {
+        'pf4-mask': autocomplete.isPF4,
+      })}
+      id="search-bar"
+    >
       <AutoComplete
         id={autocomplete.id}
         handleSearch={() => onSearch(searchQuery)}
@@ -51,6 +57,7 @@ SearchBar.propTypes = {
       searchQuery: PropTypes.string,
       url: PropTypes.string,
       useKeyShortcuts: PropTypes.bool,
+      isPF4: PropTypes.bool,
       id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     }),
     controller: PropTypes.string,
@@ -70,6 +77,7 @@ SearchBar.defaultProps = {
       searchQuery: null,
       url: null,
       useKeyShortcuts: true,
+      isPF4: false,
     },
     controller: null,
     bookmarks: {},

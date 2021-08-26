@@ -13,6 +13,7 @@ exports[`AuditsPage rendering render audits page 1`] = `
     Object {
       "autocomplete": Object {
         "id": "searchBar",
+        "isPF4": true,
         "searchQuery": "",
         "url": "audits/auto_complete_search",
         "useKeyShortcuts": true,
@@ -29,20 +30,13 @@ exports[`AuditsPage rendering render audits page 1`] = `
   searchable={true}
   toolbarButtons={
     <Button
-      active={false}
-      block={false}
-      bsClass="btn"
-      bsStyle="default"
       className="btn-docs"
-      disabled={false}
+      component="a"
       href="/links/manual/4.1.4Auditing"
       rel="external noreferrer noopener"
       target="_blank"
+      variant="secondary"
     >
-      <Icon
-        name="help"
-        type="pf"
-      />
        Documentation
     </Button>
   }
@@ -89,6 +83,7 @@ exports[`AuditsPage rendering render audits page w/empty audits 1`] = `
     Object {
       "autocomplete": Object {
         "id": "searchBar",
+        "isPF4": true,
         "searchQuery": "",
         "url": "audits/auto_complete_search",
         "useKeyShortcuts": true,
@@ -105,20 +100,13 @@ exports[`AuditsPage rendering render audits page w/empty audits 1`] = `
   searchable={true}
   toolbarButtons={
     <Button
-      active={false}
-      block={false}
-      bsClass="btn"
-      bsStyle="default"
       className="btn-docs"
-      disabled={false}
+      component="a"
       href="/links/manual/4.1.4Auditing"
       rel="external noreferrer noopener"
       target="_blank"
+      variant="secondary"
     >
-      <Icon
-        name="help"
-        type="pf"
-      />
        Documentation
     </Button>
   }
@@ -167,6 +155,7 @@ exports[`AuditsPage rendering render audits page w/error 1`] = `
     Object {
       "autocomplete": Object {
         "id": "searchBar",
+        "isPF4": true,
         "searchQuery": "",
         "url": "audits/auto_complete_search",
         "useKeyShortcuts": true,
@@ -183,20 +172,13 @@ exports[`AuditsPage rendering render audits page w/error 1`] = `
   searchable={true}
   toolbarButtons={
     <Button
-      active={false}
-      block={false}
-      bsClass="btn"
-      bsStyle="default"
       className="btn-docs"
-      disabled={false}
+      component="a"
       href="/links/manual/4.1.4Auditing"
       rel="external noreferrer noopener"
       target="_blank"
+      variant="secondary"
     >
-      <Icon
-        name="help"
-        type="pf"
-      />
        Documentation
     </Button>
   }
@@ -245,6 +227,7 @@ exports[`AuditsPage rendering render loading audits page 1`] = `
     Object {
       "autocomplete": Object {
         "id": "searchBar",
+        "isPF4": true,
         "searchQuery": "",
         "url": "audits/auto_complete_search",
         "useKeyShortcuts": true,
@@ -261,20 +244,13 @@ exports[`AuditsPage rendering render loading audits page 1`] = `
   searchable={true}
   toolbarButtons={
     <Button
-      active={false}
-      block={false}
-      bsClass="btn"
-      bsStyle="default"
       className="btn-docs"
-      disabled={false}
+      component="a"
       href="/links/manual/4.1.4Auditing"
       rel="external noreferrer noopener"
       target="_blank"
+      variant="secondary"
     >
-      <Icon
-        name="help"
-        type="pf"
-      />
        Documentation
     </Button>
   }

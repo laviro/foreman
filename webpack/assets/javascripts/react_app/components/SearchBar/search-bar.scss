@@ -1,4 +1,4 @@
-@import "../AutoComplete/auto-complete.scss";
+@import '../AutoComplete/auto-complete.scss';
 
 .search-bar {
   .autocomplete-search-btn-text {
@@ -7,5 +7,54 @@
 
   .search-input.use-shortcuts {
     padding-left: 21px;
+  }
+
+  .rbt-input-hint input {
+    display: none;
+  }
+
+  // Giving pf3 search bar a pf4 look
+  &.pf4-mask {
+    width: 500px;
+
+    .input-group {
+      display: table;
+    }
+    .input-group-btn {
+      .btn-group {
+        z-index: unset; // so the bookmarks drop down will be above other search boxes
+      }
+      .autocomplete-search-btn {
+        display: none;
+      }
+      .dropdown-toggle {
+        font-size: 16px;
+        background-color: white;
+        background-image: none;
+        padding-bottom: 4px;
+        padding-top: 4px;
+      }
+      .scrollable-dropdown {
+        max-width: 250px;
+      }
+    }
+    li {
+      font-size: 16px;
+    }
+    input {
+      font-size: 16px;
+      height: 36px;
+    }
+    .foreman-autocomplete .autocomplete-focus-shortcut {
+      top: 8px;
+      font-size: 16px;
+    }
+    .foreman-autocomplete .autocomplete-aux {
+      top: 8px;
+      font-size: 16px;
+      .autocomplete-clear-button {
+        font-size: 16px;
+      }
+    }
   }
 }

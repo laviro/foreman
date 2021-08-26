@@ -13,6 +13,7 @@ module SearchBarHelper
                         searchQuery: params[:search],
                         url: url,
                         useKeyShortcuts: true,
+                        isPF4: false,
                       },
                       bookmarks: bookmarks,
                     })

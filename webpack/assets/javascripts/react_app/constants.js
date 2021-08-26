@@ -9,7 +9,8 @@ export const STATUS = {
 export const getControllerSearchProps = (
   controller,
   id = 'searchBar',
-  canCreate = true
+  canCreate = true,
+  isPF4 = true,
 ) => ({
   controller,
   autocomplete: {
@@ -17,6 +18,7 @@ export const getControllerSearchProps = (
     searchQuery: '',
     url: `${controller}/auto_complete_search`,
     useKeyShortcuts: true,
+    isPF4,
   },
   bookmarks: {
     url: '/api/bookmarks',
